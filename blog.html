@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Revanth</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-container">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+    <section class="hero-card">
+      <div class="blog-page-header">
+        <h1>Blog</h1>
+        <p>Thoughts, learning notes, and tutorials I’ll keep adding over time.</p>
+      </div>
+
+      <div class="page-actions">
+        <button id="admin-toggle" class="button secondary">Owner access</button>
+        <p class="hint-text">Unlock the editor with your secret passcode to create new posts directly from this page.</p>
+      </div>
+
+      <div id="create-post-panel" class="create-post-panel hidden">
+        <h2>Create a new blog post</h2>
+        <p>Use this form to add a new post. Posts are stored locally in your browser so you can preview them immediately.</p>
+
+        <form id="create-post-form">
+          <div class="form-grid">
+            <label class="form-group">
+              <span>Title</span>
+              <input id="post-title" class="input-field" type="text" placeholder="Post title" required />
+            </label>
+            <label class="form-group">
+              <span>Date</span>
+              <input id="post-date" class="input-field" type="date" required />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <span>Tags</span>
+            <input id="post-tags" class="input-field" type="text" placeholder="Example: Growth, Learning" />
+          </div>
+
+          <div class="form-group">
+            <span>Summary</span>
+            <textarea id="post-summary" class="textarea-field" rows="3" placeholder="Short preview for the post" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <span>Content</span>
+            <textarea id="post-content" class="textarea-field" rows="8" placeholder="Write your post here..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Create post</button>
+            <span id="create-post-message" class="form-message"></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="blog-list" id="post-list"></div>
+
+      <div id="article-view" class="article-view hidden">
+        <button class="button secondary" id="close-article">Back to blog</button>
+        <div class="article-content" id="article-content"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/blog.js" defer></script>
+</body>
+</html>
