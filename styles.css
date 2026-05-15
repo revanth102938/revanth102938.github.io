@@ -1,0 +1,140 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #eef2ff;
+  color: #111827;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #eef2ff 0%, #ffffff 100%);
+}
+
+.page-container {
+  max-width: 960px;
+  padding: 40px 24px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(99, 102, 241, 0.14);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  padding: 40px;
+}
+
+.hero-header {
+  display: grid;
+  gap: 14px;
+}
+
+.wave {
+  margin: 0;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 4vw, 4rem);
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.intro {
+  margin: 28px 0 32px;
+  max-width: 780px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.info-block {
+  background: #f8fafc;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 20px;
+}
+
+.info-block h2 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #4338ca;
+}
+
+.info-block p {
+  margin: 0;
+  color: #334155;
+}
+
+.info-block a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.section-block {
+  margin-bottom: 28px;
+}
+
+.section-block h2 {
+  margin: 0 0 14px;
+  font-size: 1.04rem;
+  color: #22272b;
+}
+
+.section-block p,
+.section-block ul {
+  margin: 0;
+  color: #475569;
+}
+
+.section-block ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.section-block li {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 14px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.connect-block {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(165, 180, 252, 0.12));
+  border-radius: 22px;
+  padding: 26px;
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 24px 16px;
+  }
+
+  .hero-card {
+    padding: 28px 20px;
+  }
+}
